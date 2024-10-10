@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Array Method </title>
+</head>
+<body>
+    <script>
+        //map le array ma return garxa (return new array)
+        // it will not change the original array
+        // map will return the new array
+        //Map
+        // const num =[10,50,30,25]
+        // const result = num.map((a)=>{
+        //     return a+a
+        // })
+        // document.write(`${result}<br>`)
+
+        //flatMap
+        const fruits =["apple",'banana',"watermelon"]
+        const result = fruits.flatMap((a)=>{
+            return a
+        })
+        document.write(`${result}<br>`)
+
+        //reduce ra map mostly used hunxa
+        //reduce and reduceRight
+        // mouse lagda hover hune css ma transfer scale vaney hunxa
+        //reduce
+        const num = [40,12,15,20]
+        const aa = num.reduce((aa)=>{
+            return aa-5
+        })
+        document.write(`${aa}<br>`)
+        
+        //reduceRight
+        const num1 = [10,12]
+        const ab = num1.reduceRight((ab)=>{
+            return ab-5
+        })
+        document.write(`${ab}<br>`)
+    </script>
+</body>
+</html>

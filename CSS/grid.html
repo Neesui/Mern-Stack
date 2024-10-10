@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: 30% 30% 30%; */
+            /* gird template column ma kati ota column ma devide garney...yesle width ma dinxa ...yesma 1 row ma kati ota column divide garney */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: 100px auto auto ; */
+            /* grid-template-rows: 100px 100px 100px; */
+            grid-template-rows: 20vh 20vh 20vh;
+            /* column-gap: 10px;
+            row-gap: 10px; */
+            gap: 10px;
+            /* same gap chahiyo vane gap matra dida hunxa...differet gap chayo vne column and row garney ho */
+        }
+        .item-1{
+            background-color: aqua;
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            grid-column: 1/4;
+            /* yesari ni garna sakinxa 1 start vayo /4 end vayo */
+            display: grid;
+            font-size: 20px;
+            grid-template-columns: auto auto auto auto auto;
+            align-items: center;
+            /* grid-row: 4; */
+        }
+        li{
+            list-style-type: none;
+        }
+        .item-2{
+            background-color: rgb(71, 187, 255);
+            grid-row: 2/4;
+        }
+        .item-3{
+            background-color: rgb(185, 233, 13);
+            grid-column: 2/4;
+        }
+        .item-4{
+            background-color: pink;
+            justify-self: center;
+            align-self: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="item-1">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Service</li>
+            <li>Blog</li>
+        </div> -->
+        <div class="item-2">2</div>
+        <div class="item-3">3</div>
+        <div class="item-4">Nisha</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+</html>

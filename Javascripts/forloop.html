@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        for(i=0; i<=20; i++){
+            document.write(`${i}<br>`)
+        }
+        document.write(`<br><br><br>`)
+
+        //nested loop -> loop inside loop
+        for(i=0; i<=10; i++){
+            document.write(`Outer: ${i}<br>`)
+            for(j=0; j<=5; j++){
+                document.write(`${j}<br>`)
+            }
+        }
+
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= 10; j++) {
+        let multiply = i * j;
+        document.write(`${i} * ${j} = ${multiply}<br>`);
+    }
+    document.write('<br>'); 
+}
+
+    </Script>
+</body>
+</html>

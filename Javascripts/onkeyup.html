@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" id="password" name="password" placeholder="Enter Password">
+    <h2 id="title"></h2>
+    <h3 id="demo"></h3>
+    <script>
+        const passInt=document.getElementById('password')
+        // const demoFun=()=>{
+        //     document.getElementById('title').innerHTML=passInt.value
+        // }
+        // passInt.addEventListener('keyup',demoFun)
+        passInt.addEventListener('keyup',function(){
+            document.getElementById('title').innerHTML=passInt.value
+        })
+
+        passInt.addEventListener('keydown',function(){
+            document.getElementById('demo').innerHTML=passInt.value
+        })
+    </script>
+</body>
+</html>

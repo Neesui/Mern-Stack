@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/favicon.jpg" type="image/x-icon">
+    <title>Image Slider</title>
+    <style>
+        .container{
+            height: 300px;
+            width: 500px;
+            margin: 50px auto;
+            position: relative;
+        }
+        .container img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        button{
+            font-size: 30px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            font-weight: 700;
+            position: absolute;
+            top: 47%;
+            color: chartreuse;
+        }
+        .left{
+            left: 2px;
+        }
+        .right{
+            right: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://clipart-library.com/images/kcKo78gGi.jpg" alt="img">
+        <button class="left">&lt;</button>
+        <button class="right">&gt;</button>
+    </div>
+    <script src="imgSlider.js"></script>
+</body>
+</html>

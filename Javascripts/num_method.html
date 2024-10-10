@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // toString()	Returns a number as a string
+        // toExponential()	Returns a number written in exponential notation
+        // toFixed()	Returns a number written with a number of decimals
+        // toPrecision()	Returns a number written with a specified length
+        // valueOf()	Returns a number as a number
+        let num = 555.555555
+        document.write(`${num}<br>`)
+
+        //toFixed-> to say how many nums or digits to be printed after decimal
+        document.write(` this is to fixed ${num.toFixed(5)}<br>`)
+
+        //toExponential()
+        document.write(` toExponential ${num.toExponential(5)}<br>`)
+
+        //toPrecision(-> start bata kati ota digit print garney vayo
+        document.write(` toPrecision ${num.toPrecision(5)}<br>`)
+
+        //valueOf()
+        document.write(`valueOf ${num.valueOf()}<br>`)
+        //string to number
+        //number
+        //parseint
+        //parsefloat
+        const a = parseInt('12345s.222')
+        document.write(`${a} <br>`)
+
+        //num last ma rakhyo vane read gardaina
+        const b = parseFloat("1234.55 is the average num")
+        document.write(`${b}<br>`)
+    </script>
+</body>
+</html>

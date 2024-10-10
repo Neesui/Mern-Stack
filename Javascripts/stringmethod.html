@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+</head>
+<body>
+    <script>
+        let text = "I am Nisha From Pk campus. Pk bagbazar ma xa..pk is nice campus";
+        document.write(`${text}<br>`);
+        document.write(`${text[5]}<br>`);
+        document.write(`${text[6]}<br>`);
+        document.write(`${text[7]}<br>`);
+        document.write(`${text[8]}<br>`);
+        document.write(`${text[9]}<br>`);
+        
+        // to count the length of the string
+        document.write(`${text.length}<br>`);
+        
+        // indexOf() to find the first occurrence of 'Pk'
+        document.write(`${text.indexOf('Pk')}<br>`);
+        
+        // indexOf() to find the first occurrence of 'Nisha'
+        document.write(`${text.indexOf('Nisha')}<br>`);
+        
+        // lastIndexOf() to find the last occurrence of 'Pk'
+        document.write(`${text.lastIndexOf('Pk')}<br>`);
+        
+        // replace() to replace the first occurrence of 'Pk' with 'Padhmakanya'
+        document.write(`${text.replace('Pk', 'Padhmakanya')}<br>`);
+        
+        // replaceAll() to replace all occurrences of 'Pk' with 'Padhmakanya'
+        document.write(`${text.replaceAll('Pk', 'Padhmakanya')}<br>`);
+        
+        // toUpperCase() to convert the string to uppercase
+        document.write(`${text.toUpperCase()}<br>`);
+        
+        // toLowerCase() to convert the string to lowercase
+        document.write(`${text.toLowerCase()}<br>`);
+        
+        // includes() to check if the string contains 'nanu'
+        document.write(`${text.includes('nanu')}<br>`);
+        // slice(start, end)
+        // substring(start, end)
+        // substr(start, length)
+        document.write(`${text.slice(5,20)}<br>`)
+        document.write(`${text.substring(5,30)}<br>`)
+        document.write(`${text.substr(2,10)}<br>`)
+    </script>
+</body>
+</html>

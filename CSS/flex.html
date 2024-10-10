@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            background-color: lightgreen;
+            display: flex;
+            flex-wrap: wrap; 
+            /* flex wrap garda contain jati ho teti sab aauxa next line ma vaye pani */
+            justify-content: space-around;
+            /* "around" le pratek box ko agadi ra paxadi space dinxa */
+            /* pratek box ko agadi ra paxadi sab a equal gap dinxa */
+
+        }
+        /* child selector */
+        .container > .Box{
+            height: 100px;
+            width: 23%;
+            background-color: rgb(138, 197, 245);
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content{
+            height: 100px;
+            width: 23%;
+            background-color: blueviolet;
+            border-radius: 50%;
+            animation: up-down 3s ease-in-out infinite alternate-reverse;
+        }
+        @keyframes up-down {
+            0%{
+                transform: translateX(30px);
+            }
+            50%{
+                transform: translateX(50px);
+                background-color: limegreen;
+                border-radius: 10px;
+            }
+            100%{
+                transform: translateX(40px);
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="Box">
+            <div class="content">
+
+            </div>
+        </div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+        <div class="Box"></div>
+    </div>
+</body>
+</html>

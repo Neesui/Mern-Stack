@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lobster&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #32012F;
+    --secondary: #F97300;
+    --white: #ffff;
+    --nisha: #12003d;
+}
+
+header {
+    background-color: var(--nisha);
+    font-size: 30px;
+    color: aliceblue;
+    font-family: 'Arial';
+    text-transform: capitalize;
+    text-align: center;
+    padding: 5px;
+}
+
+nav {
+    background-color: var(--secondary);
+    color: aliceblue;
+    display: flex;
+    position: sticky;
+    justify-content: space-around;
+    top: 0px;
+    align-items: center;
+}
+
+nav h2 {
+    font-family: "Lobster", sans-serif;
+}
+
+.E {
+    color: #68D2E8;
+}
+
+nav ul {
+    font-family: 'Fjalla One';
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: x-large;
+    padding: 10px;
+    display: inline-block;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    width: 105px;
+    font-size: 30px;
+    font-family: sans-serif;
+    position: absolute;
+    background-color: var(--primary);
+    display: none;
+    top: 100%; /* Ensure it displays below the menu item */
+    left: 0;
+}
+.sub-dropdown{
+    position: absolute;
+    left: 98%;
+    color: black;
+    background-color: rgb(4, 0, 7);
+    display: none;
+    top:5px;
+    border-radius: 20px;
+}
+.dropdown li:hover .sub-dropdown{
+    display: block;
+}
+.sub-dropdown1{
+    position: absolute;
+    right: 100%;
+    background-color: rgb(4, 0, 7);
+    display: none;
+    top:5px;
+    border-radius: 20px;
+}
+.dropdown li:hover .sub-dropdown1{
+    display: block;
+}
+main {
+    height: 100vh;
+    background: linear-gradient(rgba(5, 49, 247, 0.5), rgba(188, 248, 24, 0.5)), url('https://cdn.pixabay.com/photo/2017/04/14/16/29/workplace-2230698_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    background-color: var(--nisha);
+    font-size: 30px;
+    color: aliceblue;
+    font-family: 'Arial';
+    text-transform: capitalize;
+    text-align: center;
+    padding: 5px;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    color: aliceblue;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(75, 1, 75);
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}

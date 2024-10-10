@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const date = new Date()
+        document.write(`${date}<br>`)
+
+        //to get year -> .getFullYear
+        document.write(`${date.getFullYear()}<br>`)
+        // to get month -> .getMonth
+        document.write(`${date.getMonth()}<br>`)
+        // to get day -> .getday 0 means sunday 6 means saturday
+        document.write(`${date.getDay()}<br>`)
+        // to get hours -> .gethours
+        document.write(`${date.getHours()}<br>`)
+        // to get minutes -> .getMinutes
+        document.write(`${date.getMinutes()}<br>`)
+        // to get second -> .getSecond
+        document.write(`${date.getSeconds()}<br>`)
+        // to get getMillisecond -> .getMillisecond
+        document.write(`${date.getMilliseconds()}<br>`)
+        //to get year mont date
+        document.write(`${date.toLocaleDateString()}<br>`)
+        //to get times
+        document.write(`${date.toLocaleTimeString()}<br>`)
+        document.write(`${date.toDateString()}<br>`)
+        document.write(`${date.toTimeString()}<br>`)
+
+        //set
+        const d = new Date()
+        d.setFullYear(2031)
+        document.write(`${d}<br>`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .demo{
+            height: 200px;
+            width: 300px;
+            /* top to button */
+            background: linear-gradient(pink,cyan,limegreen,rgb(126, 190, 243));
+            /* background: linear-gradient(to top ,pink,cyan,limegreen,rgb(126, 190, 243)); */
+            /* button dekhi top */
+            /* background: linear-gradient(to left, pink,cyan,limegreen,rgb(3, 54, 95)); */
+            /* left to right */
+            /* background: linear-gradient(to right,cyan,limegreen,rgb(126, 190, 243)); */
+            /* right to left */
+            /* background: linear-gradient(to top right,cyan,limegreen,rgb(126, 190, 243)); */
+            /*  */
+            /* background: linear-gradient(to top left,cyan,limegreen,rgb(126, 190, 243)); */
+            /* background: linear-gradient(to button left,rgb(255, 123, 0),limegreen,rgb(126, 190, 243)); */
+            /* yo position static */
+            position: relative ;
+            top: 150px ;
+            
+        }
+        .test{
+            height: 200px;
+            width: 500px;
+            background-color: red;
+            position: absolute;
+            top: 20px;;
+            right: 50px;
+        }
+        .container{
+            height: 00px;
+            width: 500px;
+            margin: 30px auto;
+            background-color: rgb(255, 136, 0);
+            position: relative;
+        }
+        .container img{
+            width: 500px;
+            height: 300px;
+            object-fit: cover;
+        }
+        button{
+            font-size: 30px;
+            border: none;
+            background: none;
+            color: blue;
+            position: absolute;
+            top:200px;
+        }
+        .left{
+            left: 2px;
+        }
+        .right{
+            right: 2px;
+        }
+    </style>
+
+</head>
+<body>
+    <pre>
+        1. staic position
+        1. Relative position
+        1. Absolute position
+        1. Fixed position
+        1. Sticky position
+    </pre>
+    <div class="demo"></div>
+    <div class="test"></div>
+    <div class="container">
+        <img src="../photo.jpg" alt="">
+        <button class="left"> &lt; </button>
+        <button class="right"> &gt; </button>
+    </div>
+</body>
+</html>

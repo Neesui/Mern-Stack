@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button onclick="demo()">show</button>
+<button ondbiclick="test()">show result</button>
+<h3></h3>
+<h2></h2>
+
+    <script>
+        //onclick, ondbiclick ma double click, onmouseover hover garda ,onmouseout hover garda xode da,
+        //onkeyup	onkeydown	, onsubmit, onchange....
+        const demo=()=>{
+            document.querySelector('h2').innerHTML=new Date()
+        }
+
+        const test=()=>{
+            document.querySelector('h3').innerHTML=new Date()
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* universal selector */
+        *{
+            font-family: 'Courier New';
+        }
+        /* element selector */
+        h2{
+            font-size: 10px;
+            color:rgb(27, 100, 5)
+        }
+        /* class selector */
+        .demo{
+            color: blue;
+        }
+        .title{
+            text-align: end;
+        }
+        #hlo{
+            background-color: aqua;
+        }
+        /* Grouping selector */
+        .demo, #hlo{
+            font-style: italic;
+        }
+        .demotxt{
+            color: rgb(1, 0, 2);
+            background-color: aqua !important;
+            /* background color class ko lina xa ani font color id ko linxa */
+        }
+        #lo{
+            color: rgb(3, 43, 43);
+            background-color: blueviolet;
+        }
+        .bb{
+            background-color: rgb(103, 255, 129);
+        }
+    </style>
+</head>
+<body>
+    <h1> this is styled using element selector</h1>
+    <h1>Hi Nisha</h1>
+    <h3 class="demo title">Please teach me css</h3>
+    <h3 class="title">same class use garera properties use garna sakinxa</h3>
+    <h3 id="hlo">Id rakhyo vane chai mathi class jasari use garna sakina</h3>
+    <p class="demotxt" id="lo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur deleniti illum consectetur quam quasi optio ab perferendis vel provident harum, cupiditate doloremque porro error amet excepturi culpa tempora qui voluptates! Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quaerat nostrum laudantium sed quisquam explicabo iste facere repellendus praesentium in delectus fugiat, ratione voluptates et quasi vitae ad temporibus facilis.</p>
+    <b class="bb">This is bold</b>
+</body>
+</html>

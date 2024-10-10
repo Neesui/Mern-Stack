@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: royalblue;
+            display: flex;
+            justify-content:space-evenly ;
+        }
+        .box{
+            height: 200px;
+            width: 20%;
+            background-color: red;
+            margin: 10px 0;
+        }
+        @media screen and (max-width:960px) {
+            .container{
+                background-color: aqua;
+            }
+            .box{
+                background-color: blueviolet;
+            }
+        }
+        @media screen and (max-width: 760px) {
+            .box{
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

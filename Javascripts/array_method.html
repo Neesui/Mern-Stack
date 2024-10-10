@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <script>
+        const a = ["apple", "orange", "mango", "banana"];
+        document.write(`${a}<br>`);
+        
+        // Indexing
+        document.write(`${a[0]}<br>`);
+        document.write(`${a[2][2]}<br>`);
+        
+        // .length
+        document.write(`${a.length}<br>`);
+        
+        // pop() -> remove the last element
+        a.pop();
+        document.write(`${a}<br>`);
+        
+        // push() -> add new element at the last index
+        a.push("kiwi");
+        document.write(`${a}<br>`);
+        
+        // shift() -> remove the first element
+        a.shift();
+        document.write(`${a}<br>`);
+        
+        // unshift() -> adding an element at the first position
+        a.unshift("watermelon");
+        document.write(`${a}<br>`);
+        
+        // splice() -> add elements at a specified position
+        a.splice(2, 0, 'pineapple', 'grapes');
+        document.write(`${a}<br>`);
+
+        //.sort
+        a.sort();
+        document.write(`${a}<br>`);
+
+        //reverse
+        a.reverse();
+        document.write(`${a}<br>`);
+    </script>
+</body>
+</html>
