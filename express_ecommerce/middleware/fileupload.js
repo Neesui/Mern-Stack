@@ -6,6 +6,7 @@ const path=require('path')
 const storage=multer.diskStorage({
     destination:(req,file,cb)=>{
         fileDestination='public/uploads'
+        
         // check if the directory exists
         if(!fs.existsSync(fileDestination)){
             fs.mkdirSync(fileDestination,{recursive:true})
